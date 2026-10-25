@@ -31,6 +31,7 @@ EV = (sys.argv[1] if len(sys.argv) > 1 else "E1").upper()
 # bulan event: posisi akhir bulan sebelum event -> akhir bulan event (akhir Okt dicari otomatis dari data)
 JENDELA = {"E1": ("2025-12-30", "2026-01-30"), "E2": ("2026-09-30", None)}
 E1_AWAL, E1_AKHIR = JENDELA[EV]
+BANK = set()
 SUF = EV.lower()
 
 
@@ -103,7 +104,11 @@ def cek_silang(t, harian):
         h = harian[(harian["date"] > x) & (harian["date"] <= y)]
         bei = (h["foreign_buy"] - h["foreign_sell"]).groupby(h["ticker"]).sum()
         j = pd.concat([ksei.rename("ksei"), bei.rename("bei")], axis=1).dropna()
+        jb = j[j.index.isin(BANK)]
+        # Pearson semua saham didominasi segelintir saham dengan perubahan lembar di luar bursa (split,
+        # restrukturisasi, pemindahan antarkustodian); Spearman dan korelasi khusus bank lebih representatif
         baris.append({"bulan": f"{pd.Timestamp(x):%b}->{pd.Timestamp(y):%b %Y}", "korelasi_lintas_saham": j.corr().iloc[0, 1],
+                      "spearman_semua": j["ksei"].corr(j["bei"], method="spearman"), "korelasi_bank": jb["ksei"].corr(jb["bei"]),
                       "ksei_total_mlr_lembar": j["ksei"].sum() / 1e9, "bei_total_mlr_lembar": j["bei"].sum() / 1e9})
     return pd.DataFrame(baris)
 
@@ -145,8 +150,9 @@ def per_asal(t, harian, bank):
 
 
 def main():
-    global E1_AKHIR
+    global E1_AKHIR, BANK
     t, harian, bank, msci = muat()
+    BANK = bank
     if E1_AKHIR is None:
         akhir = t.loc[t["date"] > pd.Timestamp(E1_AWAL), "date"]
         if akhir.empty:
@@ -177,7 +183,9 @@ def main():
             f"![pembeli](pembeli_{SUF}.png)", "",
             *(["## Lokal vs asing per tipe di saham bank (Rp T)", "", md(pa.round(3).reset_index()), ""] if not pa.empty else []),
             "## Semua kelompok saham", "", md(e1.round(3)), "",
-            "## Cek silang: perubahan kepemilikan asing KSEI vs beli-bersih asing BEI (lembar)", "", md(cs.round(3)), "",
+            "## Cek silang: perubahan kepemilikan asing KSEI vs beli-bersih asing BEI (lembar)", "",
+            "Pearson semua saham rendah sejak April karena segelintir saham berubah jumlah lembarnya di luar bursa "
+            "(split, restrukturisasi, pemindahan); korelasi peringkat dan korelasi khusus bank tetap tinggi.", "", md(cs.round(3)), "",
             "Catatan: posisi akhir bulan menangkap seluruh bulan, bukan hanya hari E1 (28-29 Jan). Rp = lembar x rata-rata "
             "harga dua akhir bulan, jadi perubahan harga tidak dihitung sebagai beli/jual."]
     (OUT / ("ringkasan_pembeli.md" if EV == "E1" else f"ringkasan_pembeli_{SUF}.md")).write_text("\n".join(teks), encoding="utf-8")

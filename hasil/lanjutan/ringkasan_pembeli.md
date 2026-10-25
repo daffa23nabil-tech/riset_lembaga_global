@@ -52,15 +52,17 @@ Menurut transaksi harian BEI, asing beli-bersih saham bank Rp-16.5 T sepanjang b
 
 ## Cek silang: perubahan kepemilikan asing KSEI vs beli-bersih asing BEI (lembar)
 
-| bulan | korelasi_lintas_saham | ksei_total_mlr_lembar | bei_total_mlr_lembar |
-|---|---|---|---|
-| Jan->Feb 2026 | 0.84 | -33.49 | -21.12 |
-| Feb->Mar 2026 | 0.84 | -11.60 | -11.34 |
-| Mar->Apr 2026 | 0.33 | 26.27 | -22.37 |
-| Apr->May 2026 | 0.10 | 13.72 | -7.69 |
-| May->Jun 2026 | -0.02 | -72.98 | -12.51 |
-| Jun->Jul 2026 | 0.07 | 6.17 | -8.94 |
-| Jul->Aug 2026 | -0.06 | 29.76 | -8.51 |
-| Aug->Sep 2026 | -0.07 | -15.14 | -11.65 |
+Pearson semua saham rendah sejak April karena segelintir saham berubah jumlah lembarnya di luar bursa (split, restrukturisasi, pemindahan); korelasi peringkat dan korelasi khusus bank tetap tinggi.
+
+| bulan | korelasi_lintas_saham | spearman_semua | korelasi_bank | ksei_total_mlr_lembar | bei_total_mlr_lembar |
+|---|---|---|---|---|---|
+| Jan->Feb 2026 | 0.84 | 0.66 | 0.83 | -33.49 | -21.12 |
+| Feb->Mar 2026 | 0.84 | 0.72 | 0.93 | -11.60 | -11.34 |
+| Mar->Apr 2026 | 0.33 | 0.77 | 0.67 | 26.27 | -22.37 |
+| Apr->May 2026 | 0.10 | 0.73 | 0.97 | 13.72 | -7.69 |
+| May->Jun 2026 | -0.02 | 0.79 | 0.82 | -72.98 | -12.51 |
+| Jun->Jul 2026 | 0.07 | 0.74 | 0.90 | 6.17 | -8.94 |
+| Jul->Aug 2026 | -0.06 | 0.75 | 0.84 | 29.76 | -8.51 |
+| Aug->Sep 2026 | -0.07 | 0.72 | 0.34 | -15.14 | -11.65 |
 
 Catatan: posisi akhir bulan menangkap seluruh bulan, bukan hanya hari E1 (28-29 Jan). Rp = lembar x rata-rata harga dua akhir bulan, jadi perubahan harga tidak dihitung sebagai beli/jual.

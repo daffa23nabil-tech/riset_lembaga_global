@@ -38,6 +38,8 @@ TAHAP = [
     ("09", "09_ketahanan.py", "uji ketahanan fingerprint dan gorengan"),
     ("16", "16_pembeli_e1.py", "siapa pembeli bank saat E1 (KSEI)"),
     ("17", "17_pembeli_e2_harian.py", "pembeli bank saat E2: aliran harian + pemegang >5%"),
+    ("18", "18_skenario_jual_paksa.py", "skenario jual paksa bila MSCI mengeluarkan Indonesia"),
+    ("inf", "buat_infografik.py", "infografik LinkedIn"),
 ]
 TAHAP_RADAR = [
     ("10", "10_radar_data.py", "dataset jendela saham-hari"),

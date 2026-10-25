@@ -126,7 +126,7 @@ Kerugian kapitalisasi hari-0: E1 ≈ Rp1.226 T, E2 ≈ Rp1.097 T (Rp1.449 T dala
    - **Asuransi dan korporasi** (tempat entitas negara biasanya tercatat) **tidak menyerap lebih dari biasanya.**
    - Jadi yang menahan harga bank di E1 terutama **investor ritel domestik**, bukan institusi negara.
    - **Batasan:** data bulanan mencakup seluruh Januari, bukan hanya 28–29 Jan. Lonjakan individu tidak ekstrem (z 0,75; peringkat 4 dari 10 bulan). Data 2025 tidak memisahkan lokal/asing per tipe.
-   - **Cek silang:** perubahan kepemilikan asing KSEI cocok dengan aliran asing harian BEI pada Jan–Mar (korelasi 0,84), tetapi tidak sejak April (≈0). Ada kemungkinan reklasifikasi di KSEI, dan ini perlu dicek sebelum dipakai untuk bulan-bulan itu.
+   - **Cek silang (sudah diperiksa):** perubahan kepemilikan asing KSEI cocok dengan aliran asing harian BEI. Korelasi peringkat semua saham 0,66–0,79 setiap bulan, dan korelasi khusus bank 0,67–0,97 (kecuali Agu→Sep: 0,34). Korelasi Pearson semua saham sempat jatuh sejak April hanya karena segelintir saham berubah jumlah lembarnya di luar bursa: split DSSA, restrukturisasi BNBR, dan pemindahan GOTO/TPIA. Data KSEI layak dipakai untuk saham bank.
 1c. **E2: siapa pembelinya (bukti sementara, 17, `lanjutan/ringkasan_pembeli_e2_harian.md`).**
    - **Asing menjual bersih saham bank Rp10,5 T** selama 16–23 Okt, dan setiap lembarnya dibeli investor domestik.
      - Nilai transaksi bank di hari-0 Rp13,7 T, sekitar 8× hari biasa.
@@ -182,6 +182,24 @@ Kerugian kapitalisasi hari-0: E1 ≈ Rp1.226 T, E2 ≈ Rp1.097 T (Rp1.449 T dala
   - **J.P. Morgan sebagian memang run-up:** setelah run-up dikendalikan, efeknya turun dari −1,9 ke −0,7 pp (p placebo 0,13). Jadi untuk J.P. Morgan, yang aman diklaim hanya E1.
 - **Batasan:** resolusi placebo terbatas (38 hari, p minimum 0,026). Skor per saham tidak dipublikasikan.
 - Rincian: `lanjutan/ringkasan_radar.md`.
+
+## Skenario: jika MSCI benar-benar mengeluarkan Indonesia (keputusan final ≤ Juni 2027) (baru, 18)
+
+Asumsi: dana pasif keluar US$5,6 miliar (estimasi Goldman Sachs, NST 16 Okt 2026), dengan variasi rendah US$3,25 miliar dan tinggi sampai dana aktif ikut menjual 25–50% dari > US$8 miliar. Dana dibagi ke saham menurut bobot EIDO, dengan kurs JISDOR Rp18.069.
+
+| Skenario | Total | Jual di bank | Hari transaksi saham bank* |
+|---|---|---|---|
+| Rendah (US$3,25 mlr) | Rp59 T | Rp29 T | ±14 |
+| **Tengah (US$5,6 mlr)** | **Rp101 T** | **Rp51 T** | **±24** |
+| Tinggi (+25% aktif) | Rp137 T | Rp69 T | ±33 |
+| Sangat tinggi (+50% aktif) | Rp173 T | Rp87 T | ±41 |
+
+\*Jumlah hari bila seluruh nilai transaksi harian rata-rata (Jul–Okt) dipakai untuk menyerap. Pada partisipasi realistis 20%, waktunya sekitar 5× lebih lama.
+
+- **Separuh jual paksa jatuh di bank.** BBCA saja ±Rp21,5 T (3,5% saham beredar, 11% free float), BBRI ±Rp13,6 T, BMRI ±Rp10,8 T.
+- **Skala:** skenario tengah ≈ **5× jual bersih asing di bank selama enam hari setelah konsultasi E2** (Rp10,5 T).
+- Ekstrapolasi linear dari multiplier IV (−10% per 1% saham beredar) memberi batas atas kasar −33% untuk harga bank. Ini **bukan ramalan**: jual pasif bisa diumumkan dan disebar berminggu-minggu, sebagian mungkin sudah terjadi sepanjang 2026, dan pembeli domestik menyerap seperti di E1 dan E2.
+- **Implikasi:** cukup besar untuk masuk skenario stress test pasar keuangan (BI-SSK), terutama di sisi likuiditas saham bank besar dan jalur ke SBN dan rupiah.
 
 ## Cerita yang didukung data saat ini
 
