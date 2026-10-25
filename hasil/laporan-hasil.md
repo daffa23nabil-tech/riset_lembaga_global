@@ -183,6 +183,20 @@ Kerugian kapitalisasi hari-0: E1 ≈ Rp1.226 T, E2 ≈ Rp1.097 T (Rp1.449 T dala
 - **Batasan:** resolusi placebo terbatas (38 hari, p minimum 0,026). Skor per saham tidak dipublikasikan.
 - Rincian: `lanjutan/ringkasan_radar.md`.
 
+## Dibanding 13 pasar berkembang lain, 2010–2026 (baru, 19, `lanjutan/ringkasan_banding_negara.md`)
+
+- **E2 adalah kejatuhan idiosinkratik terbesar di 14 pasar berkembang dalam 16 tahun.**
+  - IHSG turun 11,6%, atau 12,4% lebih dalam dari MSCI EM hari itu.
+  - Dari sekitar 54 ribu negara-hari, hanya 11 yang lebih buruk, dan semuanya hari krisis global kecuali satu (Filipina, 19 Mar 2020, saat bursa dibuka lagi di awal pandemi).
+  - E1 (−7,4%) masuk lima kejatuhan idiosinkratik terdalam.
+- **Bukan krisis mata uang.**
+  - Saat E2 rupiah hanya melemah 0,45%, dan saat E1 justru menguat 0,36%.
+  - Bandingkan Turki Maret 2021 (saham −9,8%, lira −8,1%).
+  - Pola Indonesia adalah guncangan pada mekanisme pasar saham (aliran dana indeks), bukan kehilangan kepercayaan pada ekonomi.
+- **Pemulihan E2 lebih cepat dari kejatuhan lokal biasa.** Dalam lima hari, 51% titik terdalam sudah kembali. Median kejatuhan lokal negara lain 32%, kejatuhan global 47%. Sebaliknya, E1 tidak pulih: hari +5 masih lebih dalam dari titik terdalamnya.
+- **Turki adalah pembanding paling dekat untuk guncangan lokal yang sering** (36 hari turun ≥5% sejak 2010), tetapi di Turki saham dan lira biasanya jatuh bersamaan.
+- **Batasan:** negara yang pernah benar-benar diturunkan MSCI (Argentina, Pakistan, Yunani) belum ada di data. Seri negara lain dari Refinitiv berhenti 16 Okt.
+
 ## Skenario: jika MSCI benar-benar mengeluarkan Indonesia (keputusan final ≤ Juni 2027) (baru, 18)
 
 Asumsi: dana pasif keluar US$5,6 miliar (estimasi Goldman Sachs, NST 16 Okt 2026), dengan variasi rendah US$3,25 miliar dan tinggi sampai dana aktif ikut menjual 25–50% dari > US$8 miliar. Dana dibagi ke saham menurut bobot EIDO, dengan kurs JISDOR Rp18.069.

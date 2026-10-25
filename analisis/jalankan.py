@@ -38,6 +38,7 @@ TAHAP = [
     ("09", "09_ketahanan.py", "uji ketahanan fingerprint dan gorengan"),
     ("16", "16_pembeli_e1.py", "siapa pembeli bank saat E1 (KSEI)"),
     ("17", "17_pembeli_e2_harian.py", "pembeli bank saat E2: aliran harian + pemegang >5%"),
+    ("19", "19_banding_negara.py", "perbandingan dengan 13 pasar berkembang lain"),
     ("18", "18_skenario_jual_paksa.py", "skenario jual paksa bila MSCI mengeluarkan Indonesia"),
     ("inf", "buat_infografik.py", "infografik LinkedIn"),
 ]
