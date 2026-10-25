@@ -197,6 +197,18 @@ Kerugian kapitalisasi hari-0: E1 ≈ Rp1.226 T, E2 ≈ Rp1.097 T (Rp1.449 T dala
 - **Turki adalah pembanding paling dekat untuk guncangan lokal yang sering** (36 hari turun ≥5% sejak 2010), tetapi di Turki saham dan lira biasanya jatuh bersamaan.
 - **Batasan:** negara yang pernah benar-benar diturunkan MSCI (Argentina, Pakistan, Yunani) belum ada di data. Seri negara lain dari Refinitiv berhenti 16 Okt.
 
+## Pelajaran dari reklasifikasi MSCI sebelumnya (literatur)
+
+Burnham, Gakidis & Wurgler, *Investing in the Presence of Massive Flows: The Case of MSCI Country Reclassifications* (NBER w23557, Tabel 1 dan Gambar 1), meneliti 17 reklasifikasi 2000–2015. Untuk 9 pasar yang dipindah ke indeks yang **lebih sedikit dijadikan patokan** (mis. Pakistan EM→Standalone 2008, Argentina EM→FM 2009, Maroko EM→FM 2013, Yordania EM→FM 2008):
+- Dari pengumuman sampai tanggal efektif, return rata-rata **−12,5%** (−11,0% di atas indeks lama).
+- Setahun setelah tanggal efektif, harga **berbalik naik +23,3%** (+17,9% di atas indeks baru). Pola ini konsisten dengan tekanan harga akibat aliran dana, bukan perubahan nilai fundamental.
+- Kasus 2021 di luar sampel itu: Argentina dipindah langsung EM→Standalone (diumumkan Juni 2021, efektif Nov 2021), dan Pakistan EM→FM (diumumkan 7 Sep 2021, efektif Nov 2021).
+
+**Relevansi untuk Indonesia:**
+- E2 (−12,1% di atas Indonesia sintetis di hari-0) sudah setara dengan rata-rata penurunan historis dari pengumuman sampai efektif, padahal ini baru konsultasi.
+- Kalau keputusan final turun Juni 2027, sejarah menunjukkan tekanan berlanjut sampai tanggal efektif, lalu diikuti pemulihan. Ini sejalan dengan temuan kita: E2 pulih separuh dalam seminggu, dan pembeli domestik menyerap jual asing.
+- **Belum diuji dengan data harian:** event study langsung untuk Pakistan 2021 dan Argentina 2021 butuh data indeks dan kurs negara itu (tarik di kampus atau sumber publik).
+
 ## Skenario: jika MSCI benar-benar mengeluarkan Indonesia (keputusan final ≤ Juni 2027) (baru, 18)
 
 Asumsi: dana pasif keluar US$5,6 miliar (estimasi Goldman Sachs, NST 16 Okt 2026), dengan variasi rendah US$3,25 miliar dan tinggi sampai dana aktif ikut menjual 25–50% dari > US$8 miliar. Dana dibagi ke saham menurut bobot EIDO, dengan kurs JISDOR Rp18.069.
