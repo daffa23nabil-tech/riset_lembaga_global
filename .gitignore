@@ -1,0 +1,25 @@
+# Data mentah dan olahan: Refinitiv berlisensi (tidak boleh diredistribusi), data BEI besar.
+# Cara mendapatkannya ada di data/README.md.
+data/mentah/*
+data/olah/*
+!data/README.md
+
+# Skor dan label per saham: hanya untuk analisis agregat (etika proyek), tidak dipublikasikan
+hasil/sampel_*.csv
+hasil/lanjutan/causal_forest_cate.csv
+hasil/log_jalankan.txt
+
+# Arsip jalur lama (Bloomberg, API LSEG, data dummy) dan catatan pribadi
+arsip/
+sprint-oktober.md
+linkedin-oktober.md
+
+# Python / OS
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+*.pt
+~$*.xlsx
+Thumbs.db
+.DS_Store

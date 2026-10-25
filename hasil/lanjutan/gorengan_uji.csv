@@ -1,0 +1,25 @@
+uji,nilai,p,dependen
+riwayat_suspensi di indeks_saham,-0.18746555781010812,0.6100813345200958,car_0_1
+riwayat_suspensi di rating,-0.4020033234254486,0.3232704609650999,car_0_1
+riwayat_suspensi di indeks_obligasi,-3.796102939258859,4.625536151937925e-11,car_0_1
+riwayat_suspensi: indeks_saham = rating (chi2),0.15196483202585528,0.6966647216441599,car_0_1
+riwayat_suspensi: indeks_saham = indeks_obligasi (chi2),27.574200576174547,1.511818892173134e-07,car_0_1
+ppk di indeks_saham,-1.2582458089153892,0.03370360044417491,car_0_1
+ppk di rating,-1.8363996354137924,0.0097909648454332,car_0_1
+ppk di indeks_obligasi,1.2930048421071871,0.13668036612735607,car_0_1
+ppk: indeks_saham = rating (chi2),0.48032346208355403,0.4882758381215261,car_0_1
+ppk: indeks_saham = indeks_obligasi (chi2),5.7067850031126355,0.01689946171919746,car_0_1
+"riwayat_suspensi di placebo (S&P, FTSE Okt)",-0.335449345178116,0.43547950605705565,car_0_1
+"ppk di placebo (S&P, FTSE Okt)",2.449635329306175,0.028231889650878757,car_0_1
+riwayat_suspensi di indeks_saham,-0.5266231328209245,0.033331352401567475,car_0
+riwayat_suspensi di rating,-1.7835752644686766,7.035270462150759e-09,car_0
+riwayat_suspensi di indeks_obligasi,-1.4494659943390211,0.00027350160916200626,car_0
+riwayat_suspensi: indeks_saham = rating (chi2),10.845230237101052,0.0009905056330286282,car_0
+riwayat_suspensi: indeks_saham = indeks_obligasi (chi2),3.807095506472106,0.05103587756185427,car_0
+ppk di indeks_saham,0.2883037950768703,0.4443697795610164,car_0
+ppk di rating,-2.108031986265808,3.808007684476224e-05,car_0
+ppk di indeks_obligasi,1.5207187937148228,0.01995115004893888,car_0
+ppk: indeks_saham = rating (chi2),17.365981825001157,3.0829482672358034e-05,car_0
+ppk: indeks_saham = indeks_obligasi (chi2),2.8109272110922676,0.09362424854848139,car_0
+"riwayat_suspensi di placebo (S&P, FTSE Okt)",0.014649497782589584,0.9620663167559456,car_0
+"ppk di placebo (S&P, FTSE Okt)",0.9318385867184865,0.16054953500631308,car_0
