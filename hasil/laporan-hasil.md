@@ -207,7 +207,13 @@ Burnham, Gakidis & Wurgler, *Investing in the Presence of Massive Flows: The Cas
 **Relevansi untuk Indonesia:**
 - E2 (−12,1% di atas Indonesia sintetis di hari-0) sudah setara dengan rata-rata penurunan historis dari pengumuman sampai efektif, padahal ini baru konsultasi.
 - Kalau keputusan final turun Juni 2027, sejarah menunjukkan tekanan berlanjut sampai tanggal efektif, lalu diikuti pemulihan. Ini sejalan dengan temuan kita: E2 pulih separuh dalam seminggu, dan pembeli domestik menyerap jual asing.
-- **Belum diuji dengan data harian:** event study langsung untuk Pakistan 2021 dan Argentina 2021 butuh data indeks dan kurs negara itu (tarik di kampus atau sumber publik).
+- **Argentina 2021, diuji dengan data harian (20, `lanjutan/ringkasan_argentina.md`; ARGT dan EEM dari Yahoo Finance):**
+  - **Peringatan MSCI Juni 2020:** hanya −0,5 pp di atas EM pada hari pertama.
+  - **Keputusan turun ke Standalone (24 Jun 2021):** −2,9 pp di hari pertama dan −3,9 pp dalam enam hari. Sekitar **empat kali lebih kecil** dari Indonesia E2 (−12,4 pp), padahal Argentina sudah keputusan final, sedangkan Indonesia baru konsultasi.
+  - **Dari keputusan sampai tanggal efektif (Nov 2021):** +1,5 pp di atas EM, tanpa tekanan lanjutan.
+  - **Setahun setelah efektif:** ARGT naik 15,8% sementara EEM turun 17,2%, jadi **+33 pp di atas EM**. Pembalikan yang sama dengan pola literatur.
+  - **Kenapa Argentina jauh lebih tenang:** sejak 2019 investor asing sudah terkunci kontrol modal, dan indeks MSCI Argentina hanya berisi saham yang tercatat di luar negeri. Tidak ada "pintu keluar" yang bisa diserbu. Di Indonesia, asing bebas keluar kapan saja, dan pintunya adalah saham bank yang paling likuid. **Keputusan indeks menjadi "rush" justru karena pasarnya terbuka.**
+  - Pakistan (EM→FM, 7 Sep 2021) menyusul dari Refinitiv kampus.
 
 ## Skenario: jika MSCI benar-benar mengeluarkan Indonesia (keputusan final ≤ Juni 2027) (baru, 18)
 

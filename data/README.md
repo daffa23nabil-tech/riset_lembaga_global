@@ -19,6 +19,7 @@ Cek apa yang masih kurang: `python analisis/jalankan.py --cek`.
 | `idx/kepemilikan/*-tipe.xlsx`, `*-klasifikasi.xlsx` | kepemilikan saham akhir bulan per tipe investor (Nov 2025–Sep 2026; lokal/asing mulai Jan 2026) dan per klasifikasi (Mar–Sep 2026) | KSEI, dirilis BEI | idx.co.id → Perusahaan Tercatat → Data Kepemilikan Saham (unduh berkas 'tipe' dan 'klasifikasi') |
 | `idx/pemegang_5persen/*lima-persen.xlsx` | pemegang saham di atas 5% per akun, dua tanggal per berkas (15 dan 22 Okt 2026) | KSEI, dirilis BEI | idx.co.id → Perusahaan Tercatat → Data Kepemilikan Saham (berkas harian 'lima-persen') |
 | `eido_holdings_20261021.csv` | kepemilikan iShares MSCI Indonesia ETF, proksi konstituen MSCI | iShares (latest holdings CSV) | unduh dari halaman produk EIDO; kolom `ticker,bobot` |
+| `negara_lain/yahoo_argentina_2020_2022.csv` | harga harian ARGT, ^MERV, ARS=X, EEM 2020–2022 | Yahoo Finance (chart API) | dibaca lewat browser dari halaman finance.yahoo.com |
 | `idx_ppk.csv` | daftar saham Papan Pemantauan Khusus 19 Okt 2026 | BEI Daftar Saham | cadangan; status per tanggal diambil dari kolom Remarks |
 | `jisdor.csv`, `igsyc_phei.csv` | kurs JISDOR 12–23 Okt 2026; kurva SBN 10 th 22–23 Okt 2026 | Bank Indonesia; PHEI | dibaca dari halaman publik, hanya untuk pelaporan |
 
