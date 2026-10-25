@@ -127,6 +127,13 @@ Kerugian kapitalisasi hari-0: E1 ≈ Rp1.226 T, E2 ≈ Rp1.097 T (Rp1.449 T dala
    - Jadi yang menahan harga bank di E1 terutama **investor ritel domestik**, bukan institusi negara.
    - **Batasan:** data bulanan mencakup seluruh Januari, bukan hanya 28–29 Jan. Lonjakan individu tidak ekstrem (z 0,75; peringkat 4 dari 10 bulan). Data 2025 tidak memisahkan lokal/asing per tipe.
    - **Cek silang:** perubahan kepemilikan asing KSEI cocok dengan aliran asing harian BEI pada Jan–Mar (korelasi 0,84), tetapi tidak sejak April (≈0). Ada kemungkinan reklasifikasi di KSEI, dan ini perlu dicek sebelum dipakai untuk bulan-bulan itu.
+1c. **E2: siapa pembelinya (bukti sementara, 17, `lanjutan/ringkasan_pembeli_e2_harian.md`).**
+   - **Asing menjual bersih saham bank Rp10,5 T** selama 16–23 Okt, dan setiap lembarnya dibeli investor domestik.
+     - Nilai transaksi bank di hari-0 Rp13,7 T, sekitar 8× hari biasa.
+     - Asing **tetap menjual saat harga pulih** (20, 22, 23 Okt). Pemulihan harga bank didorong pembeli domestik.
+     - Di saham non-bank, asing justru membeli bersih di hari-0 (+Rp1,0 T).
+   - **Pemegang di atas 5% tidak bergerak:** dari 78 posisi pemegang besar di 38 bank, hanya 1 yang berubah (15 → 22 Okt). Jadi penyerapnya adalah investor domestik di bawah 5%, bukan pemegang besar yang tercatat.
+   - **Batasan:** daftar KSEI ini tidak memuat pengendali BBCA, BBRI, dan BBNI. Rincian per tipe investor (ritel, reksa dana, dana pensiun, asuransi) menunggu data KSEI Oktober (tugas terjadwal 3 Nov).
 2. **IV aliran asing → harga** (tidak berubah):
    - E2: jual bersih asing 1% saham beredar → harga **−10%** (p<0,001, F=170). OLS biasa tidak negatif, jadi bias seleksinya besar.
    - Hasil OLS lintas 8 event juga tidak negatif (indeks saham +4,3, p=0,016; rating −0,7, ns). Ini menegaskan bahwa hubungan aliran–harga tanpa instrumen menyesatkan.

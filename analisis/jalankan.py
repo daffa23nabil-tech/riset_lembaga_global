@@ -37,6 +37,7 @@ TAHAP = [
     ("08", "08_gorengan_event.py", "saham bertanda pengawasan di 8 event"),
     ("09", "09_ketahanan.py", "uji ketahanan fingerprint dan gorengan"),
     ("16", "16_pembeli_e1.py", "siapa pembeli bank saat E1 (KSEI)"),
+    ("17", "17_pembeli_e2_harian.py", "pembeli bank saat E2: aliran harian + pemegang >5%"),
 ]
 TAHAP_RADAR = [
     ("10", "10_radar_data.py", "dataset jendela saham-hari"),

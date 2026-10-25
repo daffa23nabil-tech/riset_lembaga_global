@@ -23,3 +23,6 @@ __pycache__/
 ~$*.xlsx
 Thumbs.db
 .DS_Store
+
+# Nama pemegang saham per akun (bisa memuat individu): tidak dipublikasikan
+hasil/lanjutan/pemegang_5persen_bank.csv
