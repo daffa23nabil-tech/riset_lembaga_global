@@ -1,6 +1,6 @@
 # Siapa yang membeli saham bank saat E1?
 
-Perubahan kepemilikan KSEI per tipe investor di 49 saham bank, 2025-12-30 -> 2026-01-30 (bulan E1), dalam Rp T, dibanding 9 bulan lain (Nov 2025-Sep 2026). Tipe = gabungan lokal dan asing (data 2025 tidak memisahkannya); kolom porsi asing menunjukkan seberapa asing tipe itu di saham bank per 30 Jan 2026.
+Perubahan kepemilikan KSEI per tipe investor di 49 saham bank, 2025-12-30 -> 2026-01-30 (bulan event), dalam Rp T, dibanding 9 bulan lain (Nov 2025-Sep 2026). Tipe = gabungan lokal dan asing (data 2025 tidak memisahkannya); kolom porsi asing menunjukkan seberapa asing tipe itu di saham bank per 30 Jan 2026.
 
 Menurut transaksi harian BEI, asing beli-bersih saham bank Rp-16.5 T sepanjang bulan itu.
 
