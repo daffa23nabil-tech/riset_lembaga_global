@@ -16,6 +16,7 @@ Cek apa yang masih kurang: `python analisis/jalankan.py --cek`.
 | `idx/ihsg.csv` | penutupan IHSG setelah data Refinitiv berakhir | BEI `GetIndexSummary` | `tarik_bei/ihsg.js` |
 | `idx/uma.csv`, `idx/suspensi.csv` | 1.191 pengumuman UMA dan 1.926 suspensi/pembukaan, Okt 2023–Okt 2026 | BEI `GetUma`, `GetSuspension` | `tarik_bei/uma_suspensi.js` |
 | `idx/laporan_keuangan/*.zip` | XBRL `instance.zip` 49 bank, Des 2025 (audit) dan Jun 2026 (TW2) | BEI `GetFinancialReport` | `tarik_bei/xbrl_bank.js` |
+| `idx/kepemilikan/*-tipe.xlsx`, `*-klasifikasi.xlsx` | kepemilikan saham akhir bulan per tipe investor (Nov 2025–Sep 2026; lokal/asing mulai Jan 2026) dan per klasifikasi (Mar–Sep 2026) | KSEI, dirilis BEI | idx.co.id → Perusahaan Tercatat → Data Kepemilikan Saham (unduh berkas 'tipe' dan 'klasifikasi') |
 | `eido_holdings_20261021.csv` | kepemilikan iShares MSCI Indonesia ETF, proksi konstituen MSCI | iShares (latest holdings CSV) | unduh dari halaman produk EIDO; kolom `ticker,bobot` |
 | `idx_ppk.csv` | daftar saham Papan Pemantauan Khusus 19 Okt 2026 | BEI Daftar Saham | cadangan; status per tanggal diambil dari kolom Remarks |
 | `jisdor.csv`, `igsyc_phei.csv` | kurs JISDOR 12–23 Okt 2026; kurva SBN 10 th 22–23 Okt 2026 | Bank Indonesia; PHEI | dibaca dari halaman publik, hanya untuk pelaporan |

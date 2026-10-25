@@ -119,6 +119,14 @@ Kerugian kapitalisasi hari-0: E1 ≈ Rp1.226 T, E2 ≈ Rp1.097 T (Rp1.449 T dala
    - **Paradoks E1:** asing menjual bersih bank Rp9,8 T dalam dua hari, tetapi harga bank justru turun *lebih sedikit* dari pasar. Artinya ada pembeli domestik yang menyerap. Siapa pembelinya (BUMN/dana pensiun/Danantara?) adalah pertanyaan lanjutan yang menarik.
    - Lintas saham: per persen saham beredar, asing menjual bank lebih banyak di E1, E2, J.P. Morgan, dan Moody's (p 0,03–0,10).
    - Gambaran besar 2025–Okt 2026: asing menjual bersih **±Rp130 T saham bank secara kumulatif**, sedangkan non-bank −Rp27 T. Setiap event indeks terlihat sebagai anak tangga turun (`lanjutan/aliran_asing.png`).
+1b. **Siapa pembelinya? (kepemilikan KSEI per tipe investor, 16, `lanjutan/ringkasan_pembeli.md`).** Posisi akhir bulan 30 Des 2025 → 30 Jan 2026 di 49 saham bank:
+   - **Pembeli terbesar adalah individu: +Rp8,7 T.** Tipe ini 98% lokal, dan nilainya hampir 3× median bulan lain.
+   - Lembaga keuangan +Rp3,8 T.
+   - Yang menjual adalah tipe yang didominasi asing: Lainnya −Rp6,2 T, reksa dana −Rp4,4 T, dan dana pensiun −Rp1,9 T (porsi asingnya 74–89%). Ini konsisten dengan jual-bersih asing di bank menurut BEI sepanjang Januari (−Rp16,5 T).
+   - **Asuransi dan korporasi** (tempat entitas negara biasanya tercatat) **tidak menyerap lebih dari biasanya.**
+   - Jadi yang menahan harga bank di E1 terutama **investor ritel domestik**, bukan institusi negara.
+   - **Batasan:** data bulanan mencakup seluruh Januari, bukan hanya 28–29 Jan. Lonjakan individu tidak ekstrem (z 0,75; peringkat 4 dari 10 bulan). Data 2025 tidak memisahkan lokal/asing per tipe.
+   - **Cek silang:** perubahan kepemilikan asing KSEI cocok dengan aliran asing harian BEI pada Jan–Mar (korelasi 0,84), tetapi tidak sejak April (≈0). Ada kemungkinan reklasifikasi di KSEI, dan ini perlu dicek sebelum dipakai untuk bulan-bulan itu.
 2. **IV aliran asing → harga** (tidak berubah):
    - E2: jual bersih asing 1% saham beredar → harga **−10%** (p<0,001, F=170). OLS biasa tidak negatif, jadi bias seleksinya besar.
    - Hasil OLS lintas 8 event juga tidak negatif (indeks saham +4,3, p=0,016; rating −0,7, ns). Ini menegaskan bahwa hubungan aliran–harga tanpa instrumen menyesatkan.
@@ -172,7 +180,7 @@ Kerugian kapitalisasi hari-0: E1 ≈ Rp1.226 T, E2 ≈ Rp1.097 T (Rp1.449 T dala
 
 > Jenis keputusan menentukan siapa yang membayar. Keputusan MSCI soal tata kelola (E1) menghukum saham bertata kelola
 > lemah (saham PPK dan saham yang pernah di-cooling down BEI) jauh melebihi hari crash biasa. Asing menjual bank besar-besaran,
-> tetapi pembeli domestik menahan harganya. Ancaman reklasifikasi (E2) memindahkan beban ke bank: asing kembali menjual
+> tetapi pembeli domestik, terutama investor ritel, menahan harganya. Ancaman reklasifikasi (E2) memindahkan beban ke bank: asing kembali menjual
 > bank (yang paling banyak diperdagangkan asing jatuh paling dalam), multiplier aliran−harga −10%, dan bank menjadi sumber penularan. Separuh kejatuhan pulih dalam seminggu, tanda guncangan
 > aliran dana. Lembaga rating tidak memicu jual asing di saham. Mereka bergerak lewat yield SBN, dengan dampak saham kecil
 > tetapi lebih persisten.

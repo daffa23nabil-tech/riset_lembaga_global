@@ -27,6 +27,7 @@ TAHAP = [
     ("01g", "01g_label_gorengan.py", "label UMA/suspensi"),
     ("01d", "01d_idx_harian.py", "riwayat BEI 2020-2024, free float harian, proksi MSCI historis"),
     ("01e", "01e_fundamental_bank.py", "fundamental 49 bank dari XBRL"),
+    ("01h", "01h_kepemilikan_ksei.py", "kepemilikan KSEI per tipe/klasifikasi investor"),
     ("02", "02_event_study.py", "event study lintas saham E1/E2"),
     ("03", "03_perbandingan_event.py", "perbandingan 8 event"),
     ("04", "04_placebo_permutasi.py", "placebo hari buruk + permutasi"),
@@ -35,6 +36,7 @@ TAHAP = [
     ("07", "07_aliran_asing.py", "aliran asing 8 event"),
     ("08", "08_gorengan_event.py", "saham bertanda pengawasan di 8 event"),
     ("09", "09_ketahanan.py", "uji ketahanan fingerprint dan gorengan"),
+    ("16", "16_pembeli_e1.py", "siapa pembeli bank saat E1 (KSEI)"),
 ]
 TAHAP_RADAR = [
     ("10", "10_radar_data.py", "dataset jendela saham-hari"),
@@ -56,6 +58,7 @@ WAJIB = [
     ("idx/laporan_keuangan", "BEI XBRL laporan keuangan bank (tarik_bei/xbrl_bank.js)"),
     ("eido_holdings_20261021.csv", "iShares EIDO holdings (proksi konstituen MSCI)"),
     ("idx_ppk.csv", "BEI Daftar Saham, papan PPK (cadangan bila Remarks tidak ada)"),
+    ("idx/kepemilikan", "KSEI via BEI, Data Kepemilikan Saham bulanan (*-tipe.xlsx, *-klasifikasi.xlsx)"),
 ]
 WAJIB_RADAR = [("idx/harian_2023_2024_lengkap.csv.gz", "BEI Ringkasan Saham Okt 2023-2024, 16 kolom (--periode 2023)")]
 
@@ -76,7 +79,7 @@ def main():
     ap.add_argument("--hanya", nargs="+", help="kode tahap yang dijalankan saja")
     ap.add_argument("--cek", action="store_true", help="hanya cek data mentah")
     a = ap.parse_args()
-    daftar = TAHAP + (TAHAP_RADAR if a.radar or (a.hanya and any(h >= "10" for h in a.hanya)) else [])
+    daftar = TAHAP + (TAHAP_RADAR if a.radar or (a.hanya and any("10" <= h <= "15" for h in a.hanya)) else [])
     print("Cek data mentah:")
     lengkap = cek(a.radar)
     if a.cek:
