@@ -2,9 +2,6 @@ Lembaga global menilai Indonesia
 
 Sepanjang 2026, enam lembaga global mengeluarkan delapan keputusan tentang Indonesia. Dua di antaranya dari MSCI, dan keduanya menjatuhkan IHSG lebih dari 7% dalam sehari. Riset ini mengukur seberapa besar dampak tiap keputusan, saham siapa yang menanggung kerugiannya, dan lewat jalur apa kerugian itu terjadi. Datanya mencakup ±790 saham BEI, 46 bank, yield SBN, rupiah, dan 13 pasar berkembang pembanding.
 
-Status: hasil sementara, data sampai 23 Oktober 2026. Policy brief direncanakan terbit 10 November 2026 dan working paper pada Desember 2026. Angka di bawah masih bisa berubah setelah daftar konstituen MSCI resmi ditarik dari Refinitiv.
-
-Dokumen ini ditulis supaya pembaca bisa memahami riset tanpa menjalankan kodenya. Urutannya: latar belakang, pertanyaan riset, posisi terhadap literatur, data, metode, hasil, batasan, lalu cara menjalankan ulang.
 
 ## Daftar isi
 
