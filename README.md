@@ -1,4 +1,4 @@
-# Dihakimi dari Luar: siapa yang membayar ketika lembaga global menilai Indonesia?
+# Dihakimi dari Luar: lembaga global menilai Indonesia
 
 Riset empiris tentang delapan keputusan enam lembaga global terhadap Indonesia sepanjang 2026: MSCI (dua kali), FTSE Russell (dua kali), J.P. Morgan GBI-EM, Moody's, Fitch, dan S&P. Pertanyaannya: seberapa besar dampaknya, saham siapa yang menanggung kerugian, dan lewat jalur apa. Ada juga "Gorengan Radar", model deep learning yang mengukur pola perdagangan bertata kelola lemah.
 
