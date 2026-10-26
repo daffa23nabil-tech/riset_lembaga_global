@@ -1,4 +1,4 @@
-# Dihakimi dari Luar: lembaga global menilai Indonesia
+Lembaga global menilai Indonesia
 
 Sepanjang 2026, enam lembaga global mengeluarkan delapan keputusan tentang Indonesia. Dua di antaranya dari MSCI, dan keduanya menjatuhkan IHSG lebih dari 7% dalam sehari. Riset ini mengukur seberapa besar dampak tiap keputusan, saham siapa yang menanggung kerugiannya, dan lewat jalur apa kerugian itu terjadi. Datanya mencakup ±790 saham BEI, 46 bank, yield SBN, rupiah, dan 13 pasar berkembang pembanding.
 
