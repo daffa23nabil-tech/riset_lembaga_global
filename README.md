@@ -72,6 +72,40 @@ Kalau E1 menghukum saham bertata kelola lemah, bisakah pola perdagangan harian m
 - **Seberapa langka?** Bagaimana kejatuhan E1 dan E2 dibanding semua kejatuhan harian ≥5% di 14 pasar berkembang sejak 2010?
 - **Apa yang bisa terjadi berikutnya?** Apa pelajaran dari negara yang benar-benar diturunkan MSCI (Argentina 2021), dan berapa besar jual paksa kalau MSCI mengeluarkan Indonesia?
 
+### Kerangka konseptual
+
+```mermaid
+flowchart LR
+    K["Keputusan lembaga global<br/>tentang Indonesia"]
+    K --> R["Lembaga rating<br/>Moody's, Fitch, S&P<br/>(informasi risiko kredit)"]
+    K --> I["Penyedia indeks<br/>MSCI, FTSE, J.P. Morgan<br/>(aksesibilitas pasar)"]
+
+    R --> RY["Yield SBN naik,<br/>premi risiko negara"]
+    RY --> RB["Bank pemegang SBN<br/>dan pasar saham"]
+    RB --> RP["Dampak bertahan<br/>(H1b, H3c)"]
+
+    I --> IF["Dana pasif wajib<br/>menyesuaikan portofolio"]
+    IF --> IA["Jual bersih asing<br/>di saham paling likuid (H3a)"]
+    IA --> IB["Tekanan harga<br/>(H3b, multiplier IV)"]
+    IB --> ID["Diserap investor domestik,<br/>harga pulih sebagian (H3c)"]
+
+    I --> IS{"Isi keputusan"}
+    IS -->|"tata kelola (E1)"| G["Saham bertata kelola lemah<br/>PPK, riwayat UMA/suspensi (H2c)"]
+    IS -->|"reklasifikasi (E2)"| BK["Bank dengan porsi asing tinggi<br/>(H2b, H2d)"]
+
+    RD["Gorengan Radar:<br/>skor kelemahan sebelum event (H4)"] -.-> G
+    M["Moderator: ukuran, beta, likuiditas,<br/>free float, porsi asing"] -.-> IB
+    IB --> C["Penularan ke bank,<br/>SBN, rupiah (H3d)"]
+```
+
+Cara membaca diagram:
+
+- **Dua jalur.** Lembaga rating membawa informasi tentang kemampuan negara membayar utang. Dampaknya diharapkan muncul di yield SBN dan bertahan, karena pasar menilai ulang risiko. Penyedia indeks tidak membawa informasi baru tentang perusahaan. Dampaknya datang dari kewajiban dana pasif mengikuti indeks, sehingga harga diharapkan pulih setelah penjualan selesai dan ada pembeli lain.
+- **Jalur indeks bercabang menurut isi keputusan.** Keputusan soal tata kelola dan free float (E1) diharapkan menghukum saham yang tata kelolanya lemah. Ancaman reklasifikasi (E2) diharapkan menghukum saham yang paling banyak dipegang asing, yaitu bank besar.
+- **Moderator** menentukan seberapa besar satu saham terpukul pada event yang sama, dan karena itu dikendalikan di semua regresi.
+- **Gorengan Radar** adalah ukuran kelemahan tata kelola yang dihitung sebelum event. Radar menguji apakah cabang E1 bisa diprediksi lebih awal.
+- Label H1a sampai H4 di diagram merujuk ke hipotesis di atas. Hasil tiap hipotesis ada di bagian 7.
+
 ## 3. Posisi terhadap literatur
 
 Riset ini bukan studi pertama tentang reaksi pasar Indonesia terhadap MSCI 2026. Bedanya ada di pertanyaan yang diajukan.
@@ -122,6 +156,46 @@ Data tidak disertakan di repo. Data Refinitiv berlisensi, dan data publik BEI be
 | iShares EIDO | Kepemilikan ETF sebagai proksi konstituen MSCI Indonesia | 21 Okt 2026 |
 | Bank Indonesia, PHEI | Kurs JISDOR; kurva yield SBN | 12–23 Okt 2026 |
 | Yahoo Finance | ARGT, EEM, Merval, kurs peso | 2020–2022 |
+
+### Jumlah observasi dan periode
+
+Datanya terdiri dari tiga lapis. Lapis pertama adalah data mentah. Lapis kedua adalah sampel estimasi event study, yaitu ±790 saham per event. Lapis ketiga adalah dataset Gorengan Radar.
+
+| Data | Periode | Unit | Hari bursa | Total observasi |
+|---|---|---|---|---|
+| Panel harga saham utama (BEI dan Refinitiv) | 2 Jan 2020 – 23 Okt 2026 | 987 saham | 1.640 | 1.322.888 saham-hari |
+| BEI Ringkasan Saham 2020–2024 | 2 Jan 2020 – 30 Des 2024 | 956 saham | 1.211 | 977.749 saham-hari |
+| BEI Ringkasan Saham 2025–2026 | 2 Jan 2025 – 23 Okt 2026 | 980 saham | 429 | 411.232 saham-hari |
+| BEI Ringkasan Saham lengkap (untuk radar) | 2 Okt 2023 – 30 Des 2024 | 948 saham | 300 | 277.799 saham-hari |
+| Seri pasar antarnegara | 30 Des 2009 – 23 Okt 2026 | 69 seri | 4.084 | ±280 ribu titik |
+| Perbandingan antarnegara | 2010 – Okt 2026 | 14 negara | – | 55.031 negara-hari, 178 episode turun ≥5% |
+| Laporan keuangan bank (XBRL) | Des 2025, Jun 2026 | 49 bank | – | 96 laporan |
+| Kepemilikan KSEI | Nov 2025 – Sep 2026 | 49 saham bank per bulan | – | 11 bulan; pemegang >5%: 78 posisi di 38 bank |
+| Label pengawasan BEI | Okt 2023 – Okt 2026 | pengumuman | – | 1.191 UMA, 1.926 suspensi |
+
+Sampel estimasi per analisis:
+
+| Analisis | Unit | Jumlah |
+|---|---|---|
+| Event study, DML, variabel instrumental | saham per event | 792 (E1), 785 (E2), ±780–800 di event lain; 8 event |
+| Placebo hari crash biasa | hari × saham | 38–150 hari, masing-masing ±790 saham |
+| Causal forest | saham-hari | 1.577 saham-hari di 2 hari MSCI, dibanding 40 hari crash biasa |
+| Synthetic control | negara | Indonesia dan 12–13 negara donor, per event dan per seri |
+| Sidik jari bank | bank × event | 46 bank × 6 event = 276 |
+| Aliran asing | saham-hari | seluruh hari bursa 2 Jan 2025 – 23 Okt 2026 (429 hari) |
+
+Dataset Gorengan Radar, dengan satu observasi berupa jendela 30 hari bursa untuk satu saham:
+
+| Bagian | Periode | Jendela | Positif (UMA/suspensi dalam 5 hari) |
+|---|---|---|---|
+| Latih | Okt 2023 – Jun 2025 | 352.621 | – |
+| Validasi | Jul – Des 2025 | 120.338 | 2.719 (2,3%) |
+| Uji | Jan – 16 Okt 2026 | 179.558 | 2.296 (1,3%) |
+| Total | | 652.517 jendela dari 976 saham | |
+
+Jumlah jendela latih dihitung dari total dikurangi validasi dan uji. Panel harga 2020–2024 berisi return harga tanpa dividen.
+
+### Pembersihan data
 
 Pembersihan data yang memengaruhi hasil:
 
