@@ -296,24 +296,43 @@ Ringkasan per hipotesis. "Kuat" berarti lolos uji utama, placebo, dan minimal sa
 
 ### 7.1 RQ1: seberapa besar
 
-| Event | IHSG | Indeks bank | Yield SBN 10 th |
-|---|---|---|---|
-| E1 MSCI | −7,9% | −6,6% | +2,8 bp |
-| Moody's | −2,0% | −1,5% | +12,3 bp |
-| FTSE Feb | +1,7% | −1,0% | −2,5 bp |
-| Fitch | −4,5% | −1,3% | +9,2 bp |
-| J.P. Morgan | −1,7% (−6,5% di hari +5) | −0,2% (−5,9% di hari +5) | +2,0 bp |
-| S&P (placebo) | tidak dihitung | tidak dihitung | −7,5 bp |
-| FTSE Okt (placebo) | 0,0% | +1,7% | −1,8 bp |
-| E2 MSCI | −12,1% | −13,9% | tidak valid (data basi sejak 13 Okt) |
+| Event | IHSG | p | Indeks bank | p | Yield SBN 10 th | p |
+|---|---|---|---|---|---|---|
+| E1 MSCI | −7,9% | 0,071 | −6,6% | 0,059 | +2,8 bp | 0,31 |
+| Moody's | −2,0% | 0,14 | −1,5% | 0,35 | +12,3 bp | 0,23 |
+| FTSE Feb | +1,7% | 0,36 | −1,0% | 0,47 | −2,5 bp | 0,62 |
+| Fitch | −4,5% | 0,50 | −1,3% | 0,59 | +9,2 bp | 0,15 |
+| J.P. Morgan | −1,7% | 0,36 | −0,2% | 0,88 | +2,0 bp | 0,31 |
+| S&P (placebo) | tidak dihitung | | tidak dihitung | | −7,5 bp | 0,23 |
+| FTSE Okt (placebo) | 0,0% | 1,00 | +1,7% | 0,19 | −1,8 bp | 0,43 |
+| E2 MSCI | −12,1% | 0,077 | −13,9% | 0,063 | tidak valid (data basi sejak 13 Okt) | |
 
-Angka di atas adalah selisih Indonesia dengan Indonesia sintetis di hari-0. Kerugian kapitalisasi pasar di hari-0 sekitar Rp1.226 triliun pada E1 dan Rp1.097 triliun pada E2.
+Angka di atas adalah selisih Indonesia dengan Indonesia sintetis di hari-0. p adalah p placebo antarnegara: porsi negara donor yang gap-nya seekstrem Indonesia atau lebih. Dengan 12–16 donor, p terkecil yang mungkin adalah 0,059–0,077, jadi E1 dan E2 berada di batas minimum itu. Untuk J.P. Morgan, dampak baru terlihat di hari +5: IHSG −6,5% (p 0,14) dan bank −5,9% (p 0,12). Kerugian kapitalisasi pasar di hari-0 sekitar Rp1.226 triliun pada E1 dan Rp1.097 triliun pada E2.
 
 Dibanding pasar berkembang lain, E2 adalah kejatuhan idiosinkratik terbesar di 14 pasar sejak 2010: IHSG turun 12,4 poin persen lebih dalam dari MSCI EM. Dari sekitar 54 ribu hari-negara, hanya 11 yang lebih buruk, dan semuanya hari krisis global kecuali satu. Rupiah hanya melemah 0,45% saat E2 dan justru menguat 0,36% saat E1. Pola ini berbeda dari krisis kepercayaan seperti di Turki pada Maret 2021, ketika saham turun 9,8% dan lira melemah 8,1% pada hari yang sama.
 
 ### 7.2 RQ2: siapa yang membayar
 
 Isi keputusan menentukan siapa yang membayar.
+
+| Variabel | Event, jendela | Metode | Koefisien (pp) | p | p placebo |
+|---|---|---|---|---|---|
+| Bank | E2, hari-0 | OLS, kontrol penuh | −1,2 | 0,039 | 0,079 |
+| Bank | E2, hari-0 | DML | −3,0 | 0,036 | |
+| Bank | E2, [0,+5] | OLS | −1,7 | 0,12 | |
+| Bank | E1, [0,+1] | OLS | +2,9 | < 0,001 | |
+| Bank | E1, [0,+5] | OLS | +5,9 | < 0,001 | |
+| Bank | E1, [0,+5] | DML | +2,9 | 0,051 | |
+| PPK (status saat E1) | E1, [0,+1] | OLS | −4,7 | < 0,001 | 0,033 |
+| Riwayat UMA/suspensi setahun | E1, [0,+5] | OLS | −8,0 | < 0,05 | 0,016 |
+| Anggota MSCI | E1, hari-0 | OLS, ukuran linear | −2,8 | 0,034 | 0,046 |
+| Anggota MSCI | E1, hari-0 | FE desil ukuran | tidak signifikan | | |
+| Anggota MSCI | E1, hari-0 | DML | +3,2 | 0,30 | |
+| Anggota MSCI | E2, hari-0 | DML | +0,6 | 0,51 | |
+| Sidik jari bank: indeks ≠ rating | [0,+1] | Uji Wald | | 0,027 | 0,19–0,30 |
+| Sidik jari bank: indeks ≠ rating | hari-0 | Uji Wald | | 0,008 | |
+
+p adalah p-value dengan galat baku HC3 (DML: galat baku cross-fitting). p placebo adalah porsi hari crash biasa yang koefisiennya seekstrem atau lebih ekstrem. Sel kosong berarti uji itu tidak dijalankan untuk baris tersebut.
 
 - **E1, keputusan soal tata kelola.** Saham PPK tertinggal 4,7 pp di [0,+1] (p < 0,001; placebo p 0,033). Saham yang pernah terkena UMA atau suspensi dalam setahun terakhir tertinggal 8,0 pp di [0,+5]. Di 36 kombinasi definisi dan spesifikasi, efeknya berkisar −6,2 sampai −12,2 pp dan selalu lebih ekstrem dari semua 60 hari crash biasa. Kelompok ini hanya 19,7% kapitalisasi pasar, tetapi menanggung 30,6% kerugian [0,+1]. Bank justru terlindung.
 - **E2, ancaman reklasifikasi.** Beban pindah ke bank. Empat bank anggota MSCI mewakili 17% kapitalisasi, tetapi menanggung 22–23% kerugian. Bank yang paling banyak diperdagangkan asing jatuh paling dalam.
@@ -335,9 +354,66 @@ Isi keputusan menentukan siapa yang membayar.
 
 - **Konsentrasi di bank.** Sepanjang 2025 sampai Oktober 2026, asing menjual bersih sekitar Rp130 triliun saham bank, dibanding −Rp27 triliun di saham non-bank.
 - **Efek kausal.** Dengan instrumen bobot MSCI, jual bersih 1% saham beredar di E2 menurunkan harga sekitar 10%. Regresi biasa justru tidak memberi tanda negatif, yang menunjukkan bias seleksinya besar.
-- **Siapa pembelinya.** Pada Januari, pembeli bersih terbesar saham bank adalah investor individu (98% lokal) dengan +Rp8,7 T, hampir tiga kali bulan biasa. Asuransi dan korporasi tidak membeli lebih dari biasanya. Pada 16–23 Oktober, asing menjual bersih saham bank Rp10,5 T dan tetap menjual ketika harga pulih. Dari 78 posisi pemegang di atas 5% di 38 bank, hanya satu yang berubah. Jadi penyerapnya investor domestik dengan kepemilikan di bawah 5%. Rincian per tipe investor untuk Oktober menunggu data KSEI awal November.
+
+  | Event, jendela | Multiplier IV (% per 1% saham beredar) | p | F tahap pertama | Multiplier OLS | p OLS |
+  |---|---|---|---|---|---|
+  | E1, hari-0 | −10,8 | 0,10 | 43 | +3,4 | 0,017 |
+  | E1, [0,+1] | −0,7 | 0,91 | 17 | +2,9 | 0,074 |
+  | E2, hari-0 | −10,0 | < 0,001 | 170 | −1,3 | 0,43 |
+  | E2, [0,+1] | −8,8 | 0,002 | 76 | −2,5 | 0,21 |
+- **Siapa pembelinya.** Lihat bagian 7.3.1 di bawah.
 - **Pulih atau tidak.** E2 pulih 51% dalam lima hari, lebih cepat dari median kejatuhan lokal di negara lain (32%). Setelah keputusan rating, saham bank terus turun sampai sekitar −7% di hari ke-20 dan yield SBN naik sekitar 16 bp.
 - **Penularan.** Indeks connectedness naik dari ±13 pada Maret ke ±33 pada Oktober. Setelah E2, bank menjadi net transmitter terbesar (+4,8).
+
+#### 7.3.1 Siapa yang membeli dan siapa yang menjual
+
+**E1 (Januari 2026).** Perubahan kepemilikan KSEI di 49 saham bank antara 30 Desember 2025 dan 30 Januari 2026, per tipe investor, dibanding median 9 bulan lain (November 2025 sampai September 2026). Nilai rupiah dihitung dari perubahan jumlah lembar dikali rata-rata harga dua akhir bulan, sehingga perubahan harga tidak terhitung sebagai pembelian.
+
+![Siapa menambah dan mengurangi saham bank di bulan E1](hasil/lanjutan/pembeli_e1.png)
+
+| Tipe investor | Perubahan E1 (Rp T) | Median 9 bulan lain (Rp T) | z | Peringkat dari 10 bulan | p empiris | Porsi asing di tipe ini |
+|---|---|---|---|---|---|---|
+| Individu | +8,71 | +2,98 | 0,75 | 4 terbesar | 0,4 | 2% |
+| Lembaga keuangan | +3,82 | +0,11 | 1,07 | 3 terbesar | 0,3 | 69% |
+| Asuransi | +0,46 | +0,67 | −0,33 | 6 terbesar | 0,6 | 27% |
+| Korporasi | +0,39 | −1,11 | −0,16 | 5 terbesar | 0,5 | 48% |
+| Yayasan | +0,06 | +0,12 | −0,51 | 8 terbesar | 0,8 | 36% |
+| Perusahaan efek | −0,04 | −0,18 | 0,25 | 5 terbesar | 0,5 | 79% |
+| Dana pensiun | −1,93 | −0,67 | −1,00 | 2 terkecil | 0,2 | 89% |
+| Reksa dana | −4,40 | +0,08 | −0,65 | 3 terkecil | 0,3 | 85% |
+| Lainnya | −6,18 | −3,47 | −0,18 | 4 terkecil | 0,4 | 73% |
+
+z adalah selisih bulan E1 dari rata-rata bulan lain dalam satuan simpangan baku. p empiris adalah peringkat bulan E1 di antara 10 bulan, searah dengan tanda perubahannya: untuk pembeli dihitung dari yang terbesar, untuk penjual dari yang terkecil. Dengan hanya 10 bulan, p terkecil yang mungkin adalah 0,1.
+
+Cara membaca:
+
+- Pembeli bersih terbesar saham bank adalah individu (+Rp8,7 T), dan tipe ini 98% lokal. Penjualnya adalah tipe yang didominasi asing: reksa dana, dana pensiun, dan "lainnya", dengan porsi asing 73–89%. Pola ini konsisten dengan jual bersih asing di saham bank menurut BEI sepanjang Januari (−Rp16,5 T).
+- Asuransi dan korporasi, tempat entitas negara biasanya tercatat, tidak membeli lebih dari biasanya.
+- **Tidak ada perubahan yang signifikan secara statistik.** Pembelian individu memang hampir tiga kali median bulan lain, tetapi hanya peringkat 4 dari 10 bulan (p 0,4). Data bulanan mencakup seluruh Januari, bukan hanya 28–29 Januari, sehingga efek E1 bercampur dengan transaksi lain di bulan itu. Temuan ini dibaca sebagai bukti deskriptif tentang siapa penyerapnya.
+- Data 2025 tidak memisahkan investor lokal dan asing per tipe, jadi kolom porsi asing diambil dari posisi 30 Januari 2026.
+
+Cek silang: perubahan kepemilikan asing KSEI cocok dengan beli bersih asing harian BEI. Korelasi peringkat semua saham 0,66–0,79 per bulan, dan korelasi khusus saham bank 0,67–0,97, kecuali Agustus ke September (0,34).
+
+**E2 (Oktober 2026).** Data KSEI Oktober baru terbit awal November, jadi sementara ini dipakai aliran harian BEI di 49 saham bank. Di BEI, setiap lembar yang dijual asing dibeli investor domestik, sehingga kolom domestik adalah cerminan kolom asing.
+
+| Tanggal | Asing bersih (Rp T) | Domestik bersih (Rp T) | Nilai transaksi (Rp T) | Porsi asing dalam transaksi |
+|---|---|---|---|---|
+| 12 Okt | −0,09 | +0,09 | 1,68 | 50% |
+| 13 Okt | −0,18 | +0,18 | 1,69 | 55% |
+| 14 Okt | +0,13 | −0,13 | 1,78 | 63% |
+| 15 Okt | +0,39 | −0,39 | 1,76 | 58% |
+| 16 Okt (hari-0) | −4,26 | +4,26 | 13,65 | 41% |
+| 19 Okt | −2,17 | +2,17 | 8,59 | 48% |
+| 20 Okt | −1,80 | +1,80 | 9,77 | 53% |
+| 21 Okt | +0,02 | −0,02 | 5,38 | 47% |
+| 22 Okt | −0,92 | +0,92 | 4,72 | 39% |
+| 23 Okt | −1,33 | +1,33 | 5,10 | 49% |
+
+- Selama 16–23 Oktober, asing menjual bersih saham bank Rp10,5 T. Nilai transaksi bank di hari-0 sekitar 8 kali hari biasa. Jual bersih asing di saham bank pada dua hari pertama (E2 [0,+1]) termasuk yang paling ekstrem dibanding semua jendela dua hari lain sepanjang 2025–2026 (p 0,003).
+- Asing tetap menjual pada 20, 22, dan 23 Oktober, saat harga bank sedang pulih. Jadi pemulihan harga didorong pembeli domestik.
+- Di saham non-bank, asing justru membeli bersih di hari-0 (+Rp0,95 T).
+- Dari 78 posisi pemegang di atas 5% di 38 bank, hanya satu yang berubah antara 15 dan 22 Oktober (2,55 juta lembar). Penyerapnya adalah investor domestik dengan kepemilikan di bawah 5%. Daftar ini tidak memuat pemegang pengendali beberapa bank besar seperti BBCA, BBRI, dan BBNI.
+- Rincian per tipe investor (individu, reksa dana, dana pensiun, asuransi) untuk E2 menunggu data KSEI Oktober.
 
 ### 7.4 RQ4: Gorengan Radar
 
