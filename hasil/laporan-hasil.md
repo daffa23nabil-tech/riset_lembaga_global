@@ -57,7 +57,7 @@ Sekitar separuh kejatuhan pulih dalam seminggu, tetapi bank tetap tertinggal dar
 
 Kerugian kapitalisasi hari-0: E1 ≈ Rp1.226 T, E2 ≈ Rp1.097 T (Rp1.449 T dalam dua hari).
 
-**Bacaan:** Keputusan penyedia indeks saham (MSCI) menggerakkan saham 3–6 kali lebih besar daripada lembaga rating. Lembaga rating bergerak lewat yield SBN. Event placebo tidak menunjukkan apa-apa.
+**Bacaan:** Keputusan penyedia indeks saham (MSCI) menggerakkan saham 2–6 kali lebih besar daripada lembaga rating. Lembaga rating bergerak lewat yield SBN. Event placebo tidak menunjukkan apa-apa.
 
 ## RQ2 — Siapa yang membayar?
 
